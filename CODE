@@ -1,1 +1,46 @@
+#Jonathan Rizkallah
+#10/4/23
 
+#This program prints "hello world"
+print('Hello World")
+
+#This program askes the user for their name and greets them
+name = input("Enter name")
+print("Welcome" name)
+
+#Only greet me and intructor
+if name =input (Jonathan) or (Zoe)
+else print ("Welcome")
+elif print ("invalid")
+
+#Comput the area of a cirlce while prompting the uses to radius and give the user a nice message with the answer
+
+import math radius = (int(input("Enter Radius:"))) 
+calc= math.pi(radius*2)
+print(calc)
+
+#Compute MPG and prompt the user to enter the number of miles driven and number of gallons used
+
+m=(int(input("Enter number of miles driven:")))
+g=(int(input("Enter number of gallons:")))
+print(str(m) + "miles per + str(g) + " gallon"
+
+#Convert celsuis to fahrenheit
+
+c = int(input("Enter Temperature in Celsuis" )))
+f = c * (9/5 + 32)
+print (c, "degrees Celsuis is , f "degrees Farenheit")
+
+Sunday = 0
+Monday = 1
+Tuesday = 2
+Wendnesday = 3
+Thursday = 4
+Friday = 5
+Saturday = 6
+starting_day = input("What day does your vacation start on")
+length_of_stay = input("How many days is your vacation")
+starting_day = int(starting_day)
+length_day = int(length_day)
+calc_length = starting_day + length_day - 7
+print(end_of_vacation) 
