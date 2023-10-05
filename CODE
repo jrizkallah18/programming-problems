@@ -4,30 +4,35 @@
 #This program prints "hello world"
 print('Hello World")
 
-#This program askes the user for their name and greets them
-name = input("Enter name")
-print("Welcome" name)
+#This program asks the user for their name and greets them
+name = input("Enter name ")
+print("Welcome", name)
 
 #Only greet me and intructor
-if name =input (Jonathan) or (Zoe)
-else print ("Welcome")
-elif print ("invalid")
+name = input("Enter username: ")
 
-#Comput the area of a cirlce while prompting the uses to radius and give the user a nice message with the answer
+if name == "Jonathan":
+  print("Hello Jonathan!")
+elif name == "Zoe":
+  print ("Welcome Zoe!")
+else:
+  print ("Invalid username")
+
+#Compute the area of a circle while prompting the users to enter the radius and give the user a nice message with the answer
 
 import math radius = (int(input("Enter Radius:"))) 
-calc= math.pi(radius*2)
+calc = math.pi(radius*2)
 print(calc)
 
 #Compute MPG and prompt the user to enter the number of miles driven and number of gallons used
 
-m=(int(input("Enter number of miles driven:")))
-g=(int(input("Enter number of gallons:")))
+m=(int(input("Enter number of miles driven: ")))
+g=(int(input("Enter number of gallons: ")))
 print(str(m) + "miles per + str(g) + " gallon"
 
-#Convert celsuis to fahrenheit
+#Convert celsius to fahrenheit
 
-c = int(input("Enter Temperature in Celsuis" )))
+c = int(input("Enter Temperature in Celsius" )))
 f = c * (9/5 + 32)
 print (c, "degrees Celsuis is , f "degrees Farenheit")
 
