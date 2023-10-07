@@ -20,32 +20,61 @@ else:
 
 #Compute the area of a circle while prompting the users to enter the radius and give the user a nice message with the answer
 
-import math radius = (int(input("Enter Radius:"))) 
-calc = math.pi(radius*2)
-print(calc)
+radius = float(input("What is the radius of your circle? "))
+pi = 3.14159265
+area =  pi * radius * radius
+
+print("Awesome the area of your cirlce is ", area)
 
 #Compute MPG and prompt the user to enter the number of miles driven and number of gallons used
 
-m=(int(input("Enter number of miles driven: ")))
-g=(int(input("Enter number of gallons: ")))
-print(str(m) + "miles per + str(g) + " gallon"
+m=(float(input("Enter the number of miles you have driven: ")))
+g=(float(input("Enter the number of gallons you have used: ")))
+
+print("You have driven {m} miles and used {g} gallons. Your miles per gallon are eqaul to {m/g}")
 
 #Convert celsius to fahrenheit
 
-c = int(input("Enter Temperature in Celsius" )))
-f = c * (9/5 + 32)
-print (c, "degrees Celsuis is , f "degrees Farenheit")
+c = int(input("Enter Temperature in Celsius: " ))
+f = c * (9/5) + 32
 
-Sunday = 0
-Monday = 1
-Tuesday = 2
-Wendnesday = 3
-Thursday = 4
-Friday = 5
-Saturday = 6
-starting_day = input("What day does your vacation start on")
-length_of_stay = input("How many days is your vacation")
-starting_day = int(starting_day)
-length_day = int(length_day)
-calc_length = starting_day + length_day - 7
-print(end_of_vacation) 
+print (f"{c} degrees Celsius is {f} degrees Farenheit")
+
+#Create a program that allows a user top insert the day of the week that their vacation starts
+on and the number of days their vacation is. Then tell them what day their vacation ends
+
+starting_day = str(input("What day does your vacation start on? "))
+length_of_stay = int(input("How many days is your vacation? "))
+
+days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+day = 0
+
+if starting_day == "Sunday":
+    day = 0
+elif starting_day == "Monday":
+    day = 1
+elif starting_day == "Tuesday":
+    day = 2
+elif starting_day == "Wednesday":
+    day = 3
+elif starting_day == "Thursday":
+    day = 4
+elif starting_day == "Friday":
+    day = 5
+elif starting_day == "Saturday":
+    day = 6
+else: print("invalid")
+
+for i in range(len(days)):
+    x = (days[(day + length_of_stay) % len(days)])
+
+
+if length_of_stay in range (7, 13):
+    print(f"You will return from your vacation next {x}. Have a great vacation!")
+elif length_of_stay == 14 :
+    print(f"You will return from your vacation two weeks from now on {x}. Have a great vacation!")
+elif length_of_stay in range (15, 20):
+    print(f"You will return from your vacation in two weeks on {x}. Have a great vacation!")
+else:
+    print(f"You will return from your vacation on {x}. Have a great vacation!")
